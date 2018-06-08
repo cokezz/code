@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gmall-analysis" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gmall-common-service-facade" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gmall-controller" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gmall-order" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gmall-product" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gmall-redis" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gmall-user" charset="UTF-8" />
+  </component>
+</project>
