@@ -8,4 +8,8 @@ public interface UserService {
 
     public User login(LoginReq loginReq);
 
+    public User findUser(String userId);
+
+    User findUserByUsername(String username);
+
 }

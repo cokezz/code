@@ -23,8 +23,7 @@ public class UserController {
 
     @GetMapping("/getUserInfo")
     String getUserInfo(){
-        LoginReq req = new LoginReq();
-        userService.login(req);
+        userService.findUserByUsername("roy");
         return "hello World!!!!!";
     }
 }

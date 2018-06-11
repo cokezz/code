@@ -17,6 +17,10 @@ public class User implements Serializable {
     /** 密码 */
     private String password;
 
+    private int age;
+
+    private int sex;
+
     /** 手机号 */
     private String phone;
 
@@ -134,5 +138,21 @@ public class User implements Serializable {
                 ", userStateEnum=" + userStateEnum +
                 ", roleEntity=" + role +
                 '}';
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public int getSex() {
+        return sex;
+    }
+
+    public void setSex(int sex) {
+        this.sex = sex;
     }
 }

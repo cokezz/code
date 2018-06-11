@@ -5,19 +5,19 @@
 <mapper namespace="com.roy.mapper.UserMapper">
     <resultMap id="BaseResultMap" type="com.roy.model.user.User">
         <id column="id" jdbcType="BIGINT" property="id" />
-        <result column="user_name" jdbcType="VARCHAR" property="userName" />
+        <result column="user_name" jdbcType="VARCHAR" property="username" />
         <result column="password" jdbcType="VARCHAR" property="password" />
         <result column="age" jdbcType="INTEGER" property="age" />
         <result column="sex" jdbcType="INTEGER" property="sex" />
-        <result column="create_date" property="createDate" jdbcType="TIMESTAMP" />
+        <result column="create_date" property="registerTime" jdbcType="TIMESTAMP" />
     </resultMap>
     <select id="findUserByUserid" resultMap="BaseResultMap">
-        select * from t_user where id = #{id}
+        select * from t_user where id = #{userId}
     </select>
-    <select id="findUserByUserName" resultMap="BaseResultMap">
+    <select id="findUserByName" resultMap="BaseResultMap">
         select * from t_user where user_name = #{userName}
     </select>
-    <insert id="insertUser" parameterType="com.roy.model.User">
+    <insert id="insertUser" parameterType="com.roy.model.user.User">
         insert into t_user (user_name,password,create_date)
         values ( #{userName,jdbcType=VARCHAR},#{password,jdbcType=VARCHAR}, #{createDate,jdbcType=TIMESTAMP})
     </insert>
